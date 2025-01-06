@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B53970D8-7C36-43BA-9F65-CDA35BBCC980}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Converters.My.MyApplication</StartupObject>
+    <RootNamespace>Converters</RootNamespace>
+    <AssemblyName>Converters</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Converters.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Converters.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="binaryConverter.Designer.vb">
+      <DependentUpon>binaryConverter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="binaryConverter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeFile1.vb" />
+    <Compile Include="converters\AngleConverterForm.Designer.vb">
+      <DependentUpon>AngleConverterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\AngleConverterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\BiteConvertForm.Designer.vb">
+      <DependentUpon>BiteConvertForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\BiteConvertForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\FlowConverterForm.Designer.vb">
+      <DependentUpon>FlowConverterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\FlowConverterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\PowerConverterForm.Designer.vb">
+      <DependentUpon>PowerConverterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\PowerConverterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\PressureConverterForm.Designer.vb">
+      <DependentUpon>PressureConverterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\PressureConverterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\SpeedConverterForm.Designer.vb">
+      <DependentUpon>SpeedConverterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\SpeedConverterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\TempConvertForm.Designer.vb">
+      <DependentUpon>TempConvertForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\TempConvertForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\TimeConverterForm.Designer.vb">
+      <DependentUpon>TimeConverterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\TimeConverterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\TorqueConverterForm.Designer.vb">
+      <DependentUpon>TorqueConverterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\TorqueConverterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\VolumeConverterForm.Designer.vb">
+      <DependentUpon>VolumeConverterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\VolumeConverterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\WeightMassConverter.Designer.vb">
+      <DependentUpon>WeightMassConverter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\WeightMassConverter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converters\LengthConverter.Designer.vb">
+      <DependentUpon>LengthConverter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="converters\LengthConverter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstimationForms\ManualEstimationForm.Designer.vb">
+      <DependentUpon>ManualEstimationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EstimationForms\ManualEstimationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scientificCalc.Designer.vb">
+      <DependentUpon>scientificCalc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scientificCalc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logCalc.Designer.vb">
+      <DependentUpon>logCalc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="logCalc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.vb">
+      <DependentUpon>mainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="methods.vb" />
+    <Compile Include="Estimator.Designer.vb">
+      <DependentUpon>Estimator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estimator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="simpleCalc2.Designer.vb">
+      <DependentUpon>simpleCalc2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="simpleCalc2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="binaryConverter.resx">
+      <DependentUpon>binaryConverter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\AngleConverterForm.resx">
+      <DependentUpon>AngleConverterForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\BiteConvertForm.resx">
+      <DependentUpon>BiteConvertForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\FlowConverterForm.resx">
+      <DependentUpon>FlowConverterForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\LengthConverter.resx">
+      <DependentUpon>LengthConverter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\PowerConverterForm.resx">
+      <DependentUpon>PowerConverterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\PressureConverterForm.resx">
+      <DependentUpon>PressureConverterForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\SpeedConverterForm.resx">
+      <DependentUpon>SpeedConverterForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\TempConvertForm.resx">
+      <DependentUpon>TempConvertForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\TimeConverterForm.resx">
+      <DependentUpon>TimeConverterForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\TorqueConverterForm.resx">
+      <DependentUpon>TorqueConverterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\VolumeConverterForm.resx">
+      <DependentUpon>VolumeConverterForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="converters\WeightMassConverter.resx">
+      <DependentUpon>WeightMassConverter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstimationForms\ManualEstimationForm.resx">
+      <DependentUpon>ManualEstimationForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estimator.resx">
+      <DependentUpon>Estimator.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logCalc.resx">
+      <DependentUpon>logCalc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scientificCalc.resx">
+      <DependentUpon>scientificCalc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="simpleCalc2.resx">
+      <DependentUpon>simpleCalc2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.5_Disk_Drive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-frevr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compiler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backCover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estimatorTool.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
